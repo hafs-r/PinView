@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:focusableInTouchMode="true"
-        android:inputType="number"
+        android:inputType="text"
         android:padding="4dp"
         android:text="1"
         android:textColor="@android:color/holo_red_dark"
