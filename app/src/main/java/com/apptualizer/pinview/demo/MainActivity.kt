@@ -1,4 +1,4 @@
-package com.startappz.pinview.demo
+package com.apptualizer.pinview.demo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
