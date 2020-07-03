@@ -1,10 +1,22 @@
-# PinView
-**PinView** is a custom UI control which is configurable by passing different attributes available, it is extended from **AppCompatEditText**.
+# PinView 
+--------------------------------------------
+**PinView** - A custom UI control written in Kotlin which is configurable by passing different attributes available, it is extended from **AppCompatEditText**.
 
 ---------------------------------------------
 ![Screenshot](screenshots/pinview_widget.png)
 ---------------------------------------------
-**It can be used in xml layout as below**
+
+# Features
+
+- Written in kotlin
+- Multiple input field shapes line, rectangle and circle 
+- Customizable properties 
+- Support minimum API 17
+- Easy to use
+
+# How to use?
+
+- In xml layout
 
 ```
     <com.apptualizer.pinview.PinView
@@ -30,10 +42,20 @@
  
 ```
 
-**Properties added in the extended PinView are listed below**
+- Implement OnPinCompletionListener to get notified when input is filled
 
-    - viewType : Use this property to configure shape of each char, There are 
-                multiple container type available as listed below
+```
+  pinView.setPinCompletionListener(object : OnPinCompletionListener {
+        override fun onCodeCompletion(otp: String) {
+            Toast.makeText(this@MainActivity, otp, Toast.LENGTH_LONG).show()
+        }
+  }) 
+```
+
+### Properties added in PinView
+
+    - viewType : Use this property to configure shape of each char, 
+                 There are multiple container type available as listed below
                 
                  - line
                  - rectangle
@@ -45,6 +67,7 @@
     - borderThickness : Use this property to configure thickness of border lines
     - backgroundColor : Use this property to configure filled background color
 
+# Sample
 
-
+Clone the repository and check out the app module.
 
