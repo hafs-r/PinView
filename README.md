@@ -1,4 +1,4 @@
-# PinView  [ ![Download](https://api.bintray.com/packages/apptualizer/PinView/pinview/images/download.svg) ](https://bintray.com/apptualizer/PinView/pinview/_latestVersion)
+# PinView  [ ![Download](https://api.bintray.com/packages/apptualizer/PinView/pinview/images/download.svg) ](https://bintray.com/apptualizer/PinView/pinview/_latestVersion) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 --------------------------------------------
 **PinView** - A custom UI control written in Kotlin which is configurable by passing different attributes available, it is extended from **AppCompatEditText**.
 
