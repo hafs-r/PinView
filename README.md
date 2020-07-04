@@ -16,6 +16,12 @@
 
 # How to use?
 
+- In build.gradle
+
+```
+    implementation 'com.apptualizer.pinview:pinview:1.0'
+```
+
 - In xml layout
 
 ```
