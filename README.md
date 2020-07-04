@@ -9,7 +9,7 @@
 # Features
 
 - Written in kotlin
-- Multiple input field shapes line, rectangle and circle 
+- Multiple input field shapes [line, rectangle and circle] 
 - Customizable properties 
 - Support minimum API 17
 - Easy to use
