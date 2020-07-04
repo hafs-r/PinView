@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".1" />
+
+    <com.apptualizer.pinview.PinView
+        android:id="@+id/pin_view_line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:padding="4dp"
+        android:text="1"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintVertical_bias=".2"
+        app:borderColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:pinLength="6"
+        app:viewType="line"></com.apptualizer.pinview.PinView>
+
+    <com.apptualizer.pinview.PinView
+        android:id="@+id/pin_view_circle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:focusableInTouchMode="true"
+        android:text="123"
+        android:padding="20dp"
+        app:layout_constraintVertical_bias=".5"
+        android:textColor="@android:color/white"
+        app:borderColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:mask="#"
+        app:pinLength="8"
+        app:viewType="circle"></com.apptualizer.pinview.PinView>
+
+    <com.apptualizer.pinview.PinView
+        android:id="@+id/pin_view_square"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:focusableInTouchMode="true"
+        android:inputType="text"
+        android:padding="4dp"
+        android:text="1"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="visible"
+        app:layout_constraintVertical_bias=".8"
+        app:borderColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:pinLength="9"
+        app:viewType="rectangle"></com.apptualizer.pinview.PinView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
